@@ -98,10 +98,18 @@ class Contact{
         }
 }
 
-try{
-    let contactObj = new Contact("Rishabh","Gupta","75/4 Krishna nagara Agra cantt","Agra","UttarPradesh","124113","91 7906552015","gguptarishabh82@gmail.com");
-    console.log(contactObj.toString());
+//UC3 Ability to add Contacts into Array
+let contactsArray = new Array();
+function AddContact(firstName,lastName,address,city,state,zip,phoneNumber,Email){
+    try{
+    let contactobject = new Contact(firstName,lastName,address,city,state,zip,phoneNumber,Email);
+    contactsArray.push(contactobject);
+    }
+    catch (ex){
+        console.error(ex);
+    }
 }
-catch (ex){
-    console.error(ex);
-}
+AddContact("Rishabh","Gupta","75/4 Krishna nagara Agra cantt","Agra","UttarPradesh","124113","91 7906552015","gguptarishabh82@gmail.com");
+AddContact("Amit","Kumar","69,Defence colony","Mathura","UttarP","124113","91 9815468789","kumaramit123@gmail.com");
+AddContact("Satty","Thakur","78,Jhakar kati","Kanpur","UttarPradesh",145011,"91 9845612398","satty123@gmail.com");
+contactsArray.forEach(contactsDetails => console.log(contactsDetails.toString()));
