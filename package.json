@@ -1,0 +1,22 @@
+{
+  "name": "address_book",
+  "version": "1.0.0",
+  "description": "with the javascript",
+  "main": "AddressBook.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChampRish/Day42_JS_AddressBook-.git"
+  },
+  "author": "Rishabh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChampRish/Day42_JS_AddressBook-/issues"
+  },
+  "homepage": "https://github.com/ChampRish/Day42_JS_AddressBook-#readme",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
+}
