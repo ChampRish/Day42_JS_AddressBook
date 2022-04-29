@@ -77,10 +77,9 @@ function AddContact(firstName,lastName,address,city,state,zip,phoneNumber,Email)
         console.error(ex);
     }
 }
-AddContact("Viney","Khaneja","657/8,VPO Kalanaur","Rohtak","Haryana",124113,"91 7206594149","vineykhaneja999@gmail.com");
-AddContact("Vishal","Juneja","623/7,VPO Kalanaur","Rohtak","Haryana",124113,"91 9914594149","vishujuneja123@gmail.com");
-AddContact("Vikky","Jakhar","589/7,VPO Ludas","Hisar","Haryana",145011,"91 9991661664","vikky123@gmail.com");
-
+AddContact("Rishabh","Gupta","75/4 Krishna nagara Agra cantt","Agra","UttarPradesh","124113","91 7906552015","gguptarishabh82@gmail.com");
+AddContact("Amit","Kumar","69,Defence colony","Mathura","UttarP","124113","91 9815468789","kumaramit123@gmail.com");
+AddContact("Satty","Thakur","78,Jhakar kati","Kanpur","UttarPradesh",145011,"91 9845612398","satty123@gmail.com");
 
 //UC4 Find and Edit Existing Contact
 function FindandEditContact(){
