@@ -1,36 +1,4 @@
-//UC1 Ability to create a Address Book Contact with first and last names,address, city, state, zip, phone number and email...RG----
-/*
-class Contact{
-    firstName;
-    lastName;
-    address;
-    city;
-    state;
-    zip;
-    phoneNumber;
-    eMail;
-
-    constructor(...params){
-        this.firstName = params[0];
-        this.lastName = params[1];
-        this.address = params[2];
-        this.city = params[3];
-        this.state = params[4];
-        this.zip = params[5];
-        this.phoneNumber = params[6];
-        this.eMail = params[7];
-    }
-
-        toString(){
-            return ("FullName: "+this.firstName+this.lastName+"|Full Address: "+this.address+","+this.city+","+this.state+","+this.zip+"|Phone: "+this.phoneNumber+ "|EMail: "+this.eMail);
-        }
-}
-let contactObj = new Contact("Rishabh","Gupta","75/4 Krishna nagara Agra cantt","Agra","Uttar Pradesh",124113,7906552015,"gguptarishabh82@gmail.com");
-console.log(contactObj.toString());
-*/
-
-//UC2 Valid contact are added
-
+const prompt = require("prompt-sync")();
 let firstNamePattern = new RegExp('^[A-Z]{1}[a-z]{2,}$');
 let lastNamePattern = new RegExp('^[A-Z]{1}[a-z]{2,}$');
 let addressPattern = new RegExp('^[A-Za-z0-9 /,]{4,}$');
@@ -52,6 +20,7 @@ class Contact{
         this.phoneNumber = params[6];
         this.eMail = params[7];
     }
+    //UC2 Validating Person Details. RG---
     get firstName() {return this._firstName};
     set firstName(firstName){
         if (firstNamePattern.test(firstName)) this._firstName = firstName;
@@ -97,7 +66,6 @@ class Contact{
             return ("FullName: "+this.firstName+this.lastName+"|Full Address: "+this.address+","+this.city+","+this.state+","+this.zip+"|Phone: "+this.phoneNumber+ "|EMail: "+this.eMail);
         }
 }
-
 //UC3 Ability to add Contacts into Array
 let contactsArray = new Array();
 function AddContact(firstName,lastName,address,city,state,zip,phoneNumber,Email){
@@ -109,12 +77,12 @@ function AddContact(firstName,lastName,address,city,state,zip,phoneNumber,Email)
         console.error(ex);
     }
 }
-AddContact("Rishabh","Gupta","75/4 Krishna nagara Agra cantt","Agra","UttarPradesh","124113","91 7906552015","gguptarishabh82@gmail.com");
-AddContact("Amit","Kumar","69,Defence colony","Mathura","UttarP","124113","91 9815468789","kumaramit123@gmail.com");
-AddContact("Satty","Thakur","78,Jhakar kati","Kanpur","UttarPradesh",145011,"91 9845612398","satty123@gmail.com");
+AddContact("Viney","Khaneja","657/8,VPO Kalanaur","Rohtak","Haryana",124113,"91 7206594149","vineykhaneja999@gmail.com");
+AddContact("Vishal","Juneja","623/7,VPO Kalanaur","Rohtak","Haryana",124113,"91 9914594149","vishujuneja123@gmail.com");
+AddContact("Vikky","Jakhar","589/7,VPO Ludas","Hisar","Haryana",145011,"91 9991661664","vikky123@gmail.com");
 
 
-//UC4 Find and Edit Existing Contact RG-----
+//UC4 Find and Edit Existing Contact
 function FindandEditContact(){
     try{
         let contactNameToBeEdited = prompt("Enter the name of the Contact you want to edit: ");
