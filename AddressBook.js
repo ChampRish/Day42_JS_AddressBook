@@ -157,3 +157,8 @@ function DeletingContact(){
 //UC6 Finding Number of Contacts 
 let noOfContacts = contactsArray.reduce((contactsDetails) => contactsDetails + 1,0);
 console.log("Number of Contacts = "+noOfContacts);
+
+//UC7 Preventing Duplicate Entries
+AddContact("Satty","Thakur","78,Jhakar kati","Kanpur","UttarPradesh",145011,"91 9845612398","satty123@gmail.com");
+
+console.log(contactsArray);
